@@ -1,0 +1,18 @@
+Be                         8
+| 1 pays to DISCOVER? whee...
+io               Rel
+Araxi Burger Aventura
+17861 BISCAYNE BLVD
+Aventura, FL 33160
+Server: Valerie p           03/17/19 5:39 py
+Check #33                     Table 12
+2 Vanilla Bean                    $12.00
+Classic Burger 4oz                    $8.00
+Route 66 Burger Boz                 $14.00
+10% (10.00%)                    - $3.40
+Subtotal                            $30.60
+Service Charge (18.00%)              $6.12
+Tax                                  $2.14
+Total                              $38.86
+el        Powered by Toast
+

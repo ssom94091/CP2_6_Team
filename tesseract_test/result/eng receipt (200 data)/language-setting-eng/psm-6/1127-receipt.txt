@@ -1,0 +1,23 @@
+—                   a          :
+-                 PIZZA HUT               BE
+:      :           DINE_IN                er
+7         Ticket #00100           2
+oa 2        Item Count: 3               =
+ENTERED BY        TABLE        HGUEST              f
+MAURICE          56          2
+030835         10/25/2018     8:30 PH             =
+01 1 $Fivell               12.49          =
+Hand toss                             {i
+Cheese                      a
+Pepperoni                             is
+02 1 $Fivell               1.69           ba
+Bone OUT                                 ;
+Gar lcParm              h              F
+03 1 Pilcher               13.50
+DosEquis                              €
+COUPON (F6)          10.18             §
+Subtotal          23.50 8
+Service Fee           0.94 =
+SALES TAX           2.32
+Balance Due           26.76
+

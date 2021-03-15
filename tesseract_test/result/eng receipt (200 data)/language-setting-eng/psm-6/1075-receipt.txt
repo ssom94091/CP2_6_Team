@@ -1,0 +1,19 @@
+ATE
+smokeBoxBBQ
+2361 Whitney Ave
+Hamden, CT 06518
+203 909 6545
+GRDER®. B39 CE
+CASHIER          #      1
+5/22/2014 2:00:48 PM        GUESTS 1
+1 FXN DIET BIRCH      1 BC
+1 FULL BOX           Si
+SUBTOTAL:                      13°50
+TAX:                        jira
+SERVER           T#0000074 -      Ay
+TOTAL :            $14.36
+Cash                       20-60
+Change                 oh
+CLOSED           5/22/2014 2:02:00 PH
+THANK YOU! !
+

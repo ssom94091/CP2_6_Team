@@ -1,0 +1,30 @@
+Trattoria saporitg
+
+328 WashingtonStreet
+Hoboken
+201-533-1801
+
+TABLE # 4
+CHECK# 27273
+
+DATELINE 7/1/2018 5:53:48 PM
+SERVER: Gastone
+STATION: 01
+
+Item Count: 4
+
+1 STUFFED ARTICHOKE         $18.00
+CC222
+
+1 BK FETT AL PORCINI *       $36.00
+1 COSTOLETTE/ALLA/PAP*       $42.00
+1 BROCCOLI RABE W/ GA¥       OE
+
+1 ESPRESSO*                     :
+1 DBLD ESPRESSO*¥7.50
+er$117.75
+Tax                            $8.24
+GRAND TOTAL               $15.9
+
+Opened: 7/1/2018 5:53:48 PM
+
