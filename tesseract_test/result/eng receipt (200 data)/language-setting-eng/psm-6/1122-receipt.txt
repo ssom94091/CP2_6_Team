@@ -1,0 +1,14 @@
+E] feson exican Restaurant
+Server: TGR         Station: ©
+Order 4: 16533           Dine
+Table: Al             Guests: 2
+1 SOBA DE TORTILA BOWL           5.5
+17AC0 SALAD                 9.50
+CH
+1 HOUSE WARGARITA JUNBO         2.5
+1 Dr Pepper                     2.85
+1 SIDE CHEESE                   5
+1 HOUSE MARGARITA JUB0           12
+SUB TOTAL:                   4.20
+Tax 1:                       3.5
+

@@ -1,0 +1,24 @@
+Micros Demo System
+elcome to Yogurtland
+12502 North Kendall Drive
+Miemi, FL 33186
+(305) 279-3478
+Date:       Sep07'18 09:28PM
+Card Typz: VISA
+Acct #:    XXXXXXXXXXXX3B62
+Card Entry: SWIPED
+Trans Type: PURCHASE
+
+Trans Key: 1110080071932
+auth Toda: 071410
+Checl::    1082
+
+Server:    1041 melanie
+
+Tota             17.800
+
+#%NO SIGUATURE REQUIRED
+[IR PURCHASES UNDER $20.00%%
+
+ 
+

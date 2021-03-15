@@ -1,0 +1,37 @@
+HC #01
+CASHIER 11-24-2017 12:13 PM 000072
+MISC
+
+B CHZ B SPC
+na pickles
+
+$0.01
+$8.80
+$3.66
+CRISPY
+RIES ~ LRG         $3.66
+CRISPY
+PREM MED DRINK      $2.15
+Chata
+H. BURGER SPEC         $7.51
+hn onions
+EAT-IN
+THXABLE SALES            $25.85
+Th                    $2.48
+TL                  $28.31
+CASH                   $40.00
+CG                     $11.69
+
+F
+
+ORDER #    0000000052
+
+PLEASE HELP US SERVE YOU BETTER
+SERVICE WAS VERY GOOD
+
+GOOD
+
+POOR
+
+ 
+
