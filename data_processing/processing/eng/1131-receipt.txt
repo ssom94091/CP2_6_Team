@@ -1,0 +1,29 @@
+HAMBURG Re
+3950 = SLAUSON MAYWOOD, CA 90270
+PHONE 323-588-1607
+MC #01
+REG CASHIER 11 24-2017 12:13 PM 000072
+MISC            $0.01
+B CHZ B SPC           $8.80
+na pickles
+F FRIES - (Rg         $3.66
+CRISPY
+CRISPY
+F FRIES - LRG         $3.66
+CRISPY
+PREM MED DRINK         $2.15
+horchata
+H. BURGER SPEC        $7.51
+hn onions
+EAT-IN
+THXABLE SALES            $25.85
+Th                    $2.48
+TL                $28.31
+CASH                 $40.00
+CG                   $11.69
+ORDER #   0000000052
+PLEASE HELP US SERVE YOU BETTER
+SERVICE WAS VERY GOOD   [1]
+GOOD    [1]
+POOR    [£]
+
