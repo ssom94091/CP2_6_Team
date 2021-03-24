@@ -16,5 +16,5 @@ Windows 10 / Anaconda3 4.9.2 version
 ```              
  
  
-### 현재 스크립트(data_processing1.py)는 Pycharm에서 돌아간 환경이므로 스크립트를 열어주면 된다.
+### 현재 스크립트(data_processing1.py)는 Pycharm에서 돌아간 환경이므로 스크립트를 열어주면 됩니다.
 
