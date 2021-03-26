@@ -10,7 +10,7 @@
     1. documentation : 개발 제안서, 수행 계획서 등의 자료를 보관하는 폴더입니다.
     2. presentation material : 중간 기말 발표 등, 발표에 필요한 자료들을 보관하는 폴더입니다.
     3. tesseract_test : OCR library 중 하나인 tesseract 라이브러리를 통해, 여러 이미지 파일들을 txt로 바꾸는 테스트를 수행할 수 있는 코드와, 그 결과물을 보관하는 폴더입니다. (2021/03/15 업로드됨)
-    4. data_processing : 추출된 데이터들을 전처리 하는 폴더    
+    4. data_processing : 추출된 데이터들을 전처리 하는 폴더입니다.
 
 ## TODO::
 
