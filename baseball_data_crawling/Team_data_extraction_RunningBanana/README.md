@@ -1,4 +1,4 @@
-# baseball_data_processing
+# Team_data_extraction_RunningBanana
 
 야구 승률 예측을 위한 모델 학습에 사용되는 데이터 폴더 입니다.
 
