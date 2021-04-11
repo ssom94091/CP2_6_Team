@@ -8,7 +8,6 @@ http://www.statiz.co.kr/stat.php?mid=stat&re=0&ys=2020&ye=2020&se=0&te=&tm=&ty=0
 
 # player 데이터 크롤링
 year = 2020
-# url 형식은 year, start로 표시하여 replace 하면서 크롤링
 url = "http://www.statiz.co.kr/stat.php?mid=stat&re=0&ys=year&ye=year&se=0&te=&tm=&ty=0&qu=auto&po=0&as=&ae=&hi=&un=&pl=&da=1&o1=WAR_ALL_ADJ&o2=TPA&de=1&lr=0&tr=&cv=&ml=1&sn=30&pa=start&si=&cn="
 
 year_data = pd.DataFrame(columns=['순', '이름', '팀', 'war', 'g', '타석', '타수'
@@ -29,9 +28,9 @@ for step in range(0, 331, 30):
                             , '볼넷', '사구', '고4', '삼진', '병살', '희타', '희비', '타율'
                             , '출루', '장타', 'ops', 'woba', 'wrc+', 'war', 'wpa']
     year_data = pd.concat([year_data.iloc[:], data.iloc[0:10, 0:31], data.iloc[12:22, 0:31], data.iloc[24:34, 0:31]], join='outer')
-
-# print(year_data)
-year_data.to_csv('player_2020.csv', index=False, encoding='utf-8-sig')  # 한글깨짐방지
+    print(year_data)
+print(year_data)
+year_data.to_csv('hitter_2020.csv', index=False, encoding='utf-8-sig')  # 한글깨짐방지
 
 
 # 2019년
@@ -56,7 +55,7 @@ for step in range(0, 331, 30):
     year_data = pd.concat([year_data.iloc[:], data.iloc[0:10, 0:31], data.iloc[12:22, 0:31], data.iloc[24:34, 0:31]], join='outer')
 
 # print(year_data)
-year_data.to_csv('player_2019.csv', index=False, encoding='utf-8-sig')  # 한글깨짐방지
+year_data.to_csv('hitter_2019.csv', index=False, encoding='utf-8-sig')  # 한글깨짐방지
 
 # 2018년
 year = 2018
@@ -80,7 +79,7 @@ for step in range(0, 301, 30):
     year_data = pd.concat([year_data.iloc[:], data.iloc[0:10, 0:31], data.iloc[12:22, 0:31], data.iloc[24:34, 0:31]], join='outer')
 
 # print(year_data)
-year_data.to_csv('player_2018.csv', index=False, encoding='utf-8-sig')  # 한글깨짐방지
+year_data.to_csv('hitter_2018.csv', index=False, encoding='utf-8-sig')  # 한글깨짐방지
 
 
 # 2017년
@@ -105,4 +104,5 @@ for step in range(0, 331, 30):
     year_data = pd.concat([year_data.iloc[:], data.iloc[0:10, 0:31], data.iloc[12:22, 0:31], data.iloc[24:34, 0:31]], join='outer')
 
 # print(year_data)
-year_data.to_csv('player_2017.csv', index=False, encoding='utf-8-sig')  # 한글깨짐방지
+year_data.to_csv('hitter_2017.csv', index=False, encoding='utf-8-sig')  # 한글깨짐방지
+# url 형식은 year, start로 표시하여 replace 하면서 크롤링

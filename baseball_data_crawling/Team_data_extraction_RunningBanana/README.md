@@ -10,13 +10,22 @@ Windows 10 / Anaconda3 4.9.2 version
 ### 폴더의 구조는 다음과 같습니다.
 ```
     baseball_data_processing
-      ㄴ statiz_data_crawling.py 야구 팀간의 데이터 정보를 http://www.statiz.co.kr/main.php 에서 연도별로 data2017~2020 csv형태로 추출.
-      ㄴ team2017~2020.csv 연도별 팀간의 정보
+      ㄴ defender_data 수비수의 2017년~2020년 데이터 정보가 담긴 폴더
+            ㄴ defender_2017~2020.csv 수비수의 2017~2020년 데이터 정보
+            ㄴ defender_data_crawling.py 수비수 정보 크롤링을 위한 코드
+      ㄴ hitter_data 타자의 2017년~2020년 데이터 정보가 담긴 폴더
+            ㄴ hitter_2017~2020.csv 타자의 2017~2020년 데이터 정보
+            ㄴ hitter_data_crawling.py 타자 정보 크롤링을 위한 코드
+      ㄴ pitcher_data 투수의 2017년~2020년 데이터 정보가 담긴 폴더
+            ㄴ pitcher_2017~2020.csv 투수의 2017~2020년 데이터 정보
+            ㄴ pitcher_data_crawling.py 투수 정보 크롤링을 위한 코드
+      ㄴ team_data 팀의 2017년~2020년 데이터 정보가 담긴 폴더
+            ㄴ team_2017~2020.csv 팀의 2017~2020년 데이터 정보
+            ㄴ team_data_crawling.py 팀 정보 크롤링을 위한 코드
       ㄴ team_kbo.csv 82년~2017년 팀간의 정보
       ㄴ 2019_kbo_player_kaggle_v2.csv 2019년 기준 야구선수들의 정보
       ㄴ kbo_for_kaggle.py 야구선수 고유값 확인 및 column 정보가 담긴 코드
-      ㄴ player_data_crawling.py 야구선수 정보 크롤링을 위한 코드
-      ㄴ player_2017~2020.csv 모든 포지션 야구선수 2017~2020년 데이터 정보
+
 ```              
  
  
