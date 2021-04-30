@@ -16,9 +16,8 @@
 
 ## TODO::
 
-     - 프로젝트 계획 구체화
-     - 사용할 기술 스택 및 라이브러리 구체화
-     - tesseract library의 실제 사진 인식률이 낮으므로 해결할 방법 찾기
-     - 개발에 필요한 논문 등 여러 자료 찾기
-     - 승부예측 알고리즘 구현
-     - 데이터 분류
+     - 승부예측 알고리즘 구현 -> sklearn lib 사용
+     - Web / App interface 기술 스택 및 디자인 구체화
+     - Core Feature 외 추가할 Additional Feature 구상
+     - 논문 발표 일정 확인 및 내용 구체화
+     - Application 등록 절차 확인
