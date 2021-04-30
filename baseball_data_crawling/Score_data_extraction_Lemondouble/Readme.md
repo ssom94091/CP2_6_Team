@@ -36,3 +36,10 @@ Windows 10 / Anaconda3 4.9.2 version / selenium 3.141.0 / chrome driver 89
   7. ipython notebook 커맨드를 입력하여, Jupyter notebook을 실행시킵니다.
   8. Notebook 창에서, 순차적으로 커맨드를 실행해 줍니다. 이 때, 두번째 블록의 year 변수를 바꿔 다른 년도의 데이터를 수집할 수도 있습니다.
 ```
+
+### 주의 사항은 다음과 같습니다.
+
+```
+    get_game_score_and_entry.ipynb 스크립트 사용 시, 올스타전 등 일부 이벤트전의 경우, 스크립트가 다운될 수 있습니다.
+    해당 문제는 연간 1회 정도 생기기 때문에, script를 수정하는 것 대신, 해당 날짜를 기준으로 하여 script를 두 번 실행하고, csv 파일을 손으로 합치는 것으로 해결할 수 있습니다.
+```
