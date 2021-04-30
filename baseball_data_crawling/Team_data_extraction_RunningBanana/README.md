@@ -19,6 +19,9 @@ Windows 10 / Anaconda3 4.9.2 version
       ㄴ pitcher_data 투수의 2017년~2020년 데이터 정보가 담긴 폴더
             ㄴ pitcher_2017~2020.csv 투수의 2017~2020년 데이터 정보
             ㄴ pitcher_data_crawling.py 투수 정보 크롤링을 위한 코드
+      ㄴ pitcher_processing 머신러닝 학습에 쓰일 투수 2017_2020년 데이터 정보
+            ㄴ pitcher_processing2017~2020.csv 투수의 2017~2020년 데이터 정보
+            ㄴ pitcher_processing.py 투수 정보 처리 코드
       ㄴ team_data 팀의 2017년~2020년 데이터 정보가 담긴 폴더
             ㄴ team_2017~2020.csv 팀의 2017~2020년 데이터 정보
             ㄴ team_data_crawling.py 팀 정보 크롤링을 위한 코드
