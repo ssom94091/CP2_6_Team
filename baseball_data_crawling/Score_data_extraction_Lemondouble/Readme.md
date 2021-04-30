@@ -18,9 +18,11 @@ Windows 10 / Anaconda3 4.9.2 version / selenium 3.141.0 / chrome driver 89
 ```
     Score_data_extraction_Lemondouble
       ㄴ get_game_score_data.ipynb -> http://www.statiz.co.kr/schedule.php?opt=3&sy=2019 와 같은 테이블에서 경기 스코어를 추출하여 csv 파일로 저장.
+      ㄴ get_game_score_and_entry.ipynb ->  http://www.statiz.co.kr/boxscore.php?opt=1&sopt=1&date=2019-09-07 와 같은 테이블에서, 경기 스코어/투수/타자 엔트리/점수/승패를 추출하여 csv 파일로 저장
       ㄴ chromedriver.exe -> chrome 89 version 드라이버입니다. (get_game_score_data.ipynb 을 실행하는데 필요합니다.)
       ㄴ sample_data_year_2019 -> get_game_score_data.ipynb 스크립트를 이용하여, 2019년 데이터를 추출한 샘플 데이터가 들어있습니다.
           ㄴstatiz_game_data_2019_x.csv -> 3월부터 10월까지, 추출한 데이터들이 담긴 파일들입니다.
+      ㄴ sample_data_with_entry ->  get_game_score_and_entry.ipynb 스크립트를 이용하여, 2017, 2018, 2019, 2020년 데이터를 추출한 샘플 데이터들이 들어 있습니다.
 ```              
  
 ### 실행 방법은 다음과 같습니다.
