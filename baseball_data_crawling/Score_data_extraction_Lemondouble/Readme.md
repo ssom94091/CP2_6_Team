@@ -42,4 +42,5 @@ Windows 10 / Anaconda3 4.9.2 version / selenium 3.141.0 / chrome driver 89
 ```
     get_game_score_and_entry.ipynb 스크립트 사용 시, 올스타전 등 일부 이벤트전의 경우, 스크립트가 다운될 수 있습니다.
     해당 문제는 연간 1회 정도 생기기 때문에, script를 수정하는 것 대신, 해당 날짜를 기준으로 하여 script를 두 번 실행하고, csv 파일을 손으로 합치는 것으로 해결할 수 있습니다.
+    (해당 내용을 예외처리 하는 것 보다, 발생 빈도가 굉장히 낮고 예측할 수 있는 error라 수작업으로 처리하는 것이 Cost가 낮다고 판단했습니다.) 
 ```
