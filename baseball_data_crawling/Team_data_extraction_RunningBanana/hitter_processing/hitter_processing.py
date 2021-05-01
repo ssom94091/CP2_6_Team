@@ -1,6 +1,7 @@
 import pandas as pd
 for i in range(2017, 2021):
     table = pd.read_csv('hitter_' + str(i) + '.csv')
+    table = table[table['타석'] >= 20]  # 타석 20이하는 0값이 많으므로 날린다.
     print(table)
 
     # 기존의 column 기억하기 -> 나중에 drop
