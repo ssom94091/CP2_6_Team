@@ -28,6 +28,9 @@ Windows 10 / Anaconda3 4.9.2 version
       ㄴ team_data 팀의 2017년~2020년 데이터 정보가 담긴 폴더
             ㄴ team_2017~2020.csv 팀의 2017~2020년 데이터 정보
             ㄴ team_data_crawling.py 팀 정보 크롤링을 위한 코드
+      ㄴ training_data 머신러닝 학습에 쓰일 데이타, pithcer_processing2017~2020과 hitter_processing2017~2020 취합한 데이터
+            ㄴ 
+            ㄴ 
       ㄴ 2019_kbo_player_kaggle_v2.csv 2019년 기준 야구선수들의 정보
       ㄴ team_kbo.csv 82년~2017년 팀 간의 정보
       ㄴ kbo_for_kaggle.py 야구선수 고유값 확인 및 column 정보가 담긴 코드
