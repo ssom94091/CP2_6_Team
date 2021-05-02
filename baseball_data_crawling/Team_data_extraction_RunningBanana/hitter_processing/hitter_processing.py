@@ -1,10 +1,13 @@
 import pandas as pd
 
 for i in range(2017, 2021):
+    # 해당 년도의 타자 데이터를 읽어서 DataFrame 형식으로 가져옴
     table = pd.read_csv('hitter_' + str(i) + '.csv')
     print(table)
 
-    # 기존의 column 기억하기 -> 나중에 drop
+    # 가져온 투수 데이터를 바탕으로 변인을 추출하고, 변인이 아닌 기존 데이터들은 drop하여 변인들만 남기고 저장함
+
+    # 기존 데이터 기억하기 (변인 추출 완료 후에 drop할 데이터)
     ordinary_columns = list(table.columns)
     print(ordinary_columns)
 
@@ -35,8 +38,11 @@ for i in range(2017, 2021):
 
     #타율 관련 정보는 drop되어서는 안되므로 ordinary_columns에서 삭제
     ordinary_columns.remove('타율')
+
+    # 기존 데이터 drop
     table.drop(ordinary_columns, axis=1, inplace=True)
     print(table)
     print(table.columns)
 
+    # csv 형식으로 저장
     table.to_csv('hitter_processing' + str(i) + '.csv', encoding='utf-8-sig')
