@@ -7,6 +7,7 @@ for i in range(2017, 2021):
     ordinary_columns = list(table.columns)
     print(ordinary_columns)
 
+    # 머신 러닝 학습을 위한 변인 추출
     table['승률'] = table['승'] / (table['승'] + table['패'])
     table['피안타율'] = table['안타'] / table['타자']
     table['피홈런율'] = table['홈런'] / table['타자']
