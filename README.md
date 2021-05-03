@@ -13,6 +13,7 @@
     4. data_processing : 추출된 데이터들을 전처리 하는 폴더입니다.
     5. baseball_data_crawling : 머신러닝을 위한 야구 데이터를 모아두는 폴더입니다. 크롤링에 사용한 스크립트와 샘플 데이터들이 있습니다.
     6. Meeting Materials : 회의 내용을 정리한 문서들을 보관하는 폴더입니다.
+    7. machine_learning : 머신러닝 학습에 필요한 코드와 데이터가 들어있는 폴더입니다.
 
 ## TODO::
 

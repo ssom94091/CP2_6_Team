@@ -32,6 +32,7 @@ Windows 10 / Anaconda3 4.9.2 version
       ㄴ training_data 머신러닝 학습에 쓰일 데이타, pithcer_processing2017~2020과 hitter_processing2017~2020 취합한 데이터
             ㄴ training_data2017~2020.csv 머신러닝 학습에 쓰일 데이터
             ㄴ training_data_drop2017~2020.csv 머신러닝 학습에 쓰일 데이터, 쓸데없는 column 제거
+            ㄴ training_data_all.csv 위 drop2017~2020.csv 파일을 하나의 csv파일로 합친 것
             ㄴ training_set.ipynb 머신러닝 학습에 쓰일 데이터 추출 코드, 실행환경 쥬피터노트북
       ㄴ 2019_kbo_player_kaggle_v2.csv 2019년 기준 야구선수들의 정보
       ㄴ team_kbo.csv 82년~2017년 팀 간의 정보
