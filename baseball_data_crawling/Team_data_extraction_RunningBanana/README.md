@@ -43,3 +43,16 @@ Windows 10 / Anaconda3 4.9.2 version
  
 ### 현재 스크립트에 있는 코드 모두 Pycharm에서 돌아간 환경이므로 스크립트를 열어주면 됩니다.
 
+### ML에 필요한 training_data_all Generate하는 방법
+
+```
+    1. hitter_processing/hitter_processing.py 를 열고, 상단의 new_hitter_factor와 new_hitter_strike_out_factor를 조절한다.
+       해당 값은, 20경기 미만의 신인 선수인 경우, 20경기 이상 출전한 기존 선수에 비해 신인 선수가 몇% 실력이 부진하고, 몇% 삼진을 더 당하는지 나타낸다.
+       이후, hitter_processing.py를 실행하여 csv 파일들을 생성한다.
+    2. pitcher_processing/pitcher_processing.py를 실행한다. 이후 replace_NAN 파일을 실행하여 pitcher.csv에서 생긴 NaN값을 대체해 준다.
+    3. Jupyter notebook으로 training_set.ipynb를 실행하고, 처음부터 script들을 실행시킨다. 이 때, 마지막에서 두 번째 Script는 처리하는데 시간이 걸리므로,
+       "Job Finish" 문구를 확인할 때 까지 기다린다. 이후, 마지막 Script를 실행하면 training_data_all.csv 파일이 생성된다.
+    4. 프로젝트 Root 폴더에서, machine_learning 폴더에 들어가 Randomforest training.ipynb 파일을 실행시킨다.
+
+    # 모든 파일들은 상대 경로로 연결되어 있으므로, 별도로 파일 이름을 건드리지 않는다면 실행됩니다.
+```
