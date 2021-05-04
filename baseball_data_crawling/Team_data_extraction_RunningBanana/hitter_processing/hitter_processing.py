@@ -2,7 +2,7 @@ import pandas as pd
 
 for i in range(2017, 2021):
     # 해당 년도의 타자 데이터를 읽어서 DataFrame 형식으로 가져옴
-    table = pd.read_csv('hitter_' + str(i) + '.csv')
+    table = pd.read_csv('../hitter_data/hitter_' + str(i) + '.csv')
     print(table)
 
     # 가져온 투수 데이터를 바탕으로 변인을 추출하고, 변인이 아닌 기존 데이터들은 drop하여 변인들만 남기고 저장함
@@ -20,6 +20,8 @@ for i in range(2017, 2021):
     table['타수대비타점'] = table['타점'] / table['타수']  # 타수대비타점: 타점/타수
     table['출루율'] = (table['사구'] + table['안타']) / (table['타수'] + table['사구'] + table['희타'])  # 출루율 : (사구+안타)/(타수+사구+희타)
     table['도루성공률'] = table['도루'] / (table['도루'] + table['도실'])  # 도루성공률 : 도루성공/(도루성공 + 도루실패)
+    table['선수OPS'] = table['ops']
+    table['선수WAR'] = table['war']
     ordinary_columns.remove('이름')
 
     # table의 모든 NaN을 0으로 대체

@@ -1,7 +1,7 @@
 import pandas as pd
 for i in range(2017, 2021):
     # 해당 년도의 투수 데이터를 읽어서 DataFrame 형식으로 가져옴
-    table = pd.read_csv('pitcher_' + str(i) + '.csv')
+    table = pd.read_csv('../pitcher_data/pitcher_' + str(i) + '.csv')
     print(table)
 
     # 가져온 투수 데이터를 바탕으로 변인을 추출하고, 변인이 아닌 기존 데이터들은 drop하여 변인들만 남기고 저장함
@@ -17,6 +17,7 @@ for i in range(2017, 2021):
     table['이닝당삼진'] = table['삼진'] / table['이닝']
     table['이닝당볼넷'] = table['볼넷'] / table['이닝']
     table['평균자책점'] = (table['자책'] * 9) / table['이닝']
+    table['선수WAR'] = table['WAR']
     ordinary_columns.remove('WHIP')
     ordinary_columns.remove('이름')
 
