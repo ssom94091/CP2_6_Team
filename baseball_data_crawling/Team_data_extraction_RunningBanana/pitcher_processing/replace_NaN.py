@@ -21,4 +21,4 @@ for i in range(2017, 2021):
     mean_ja = pitcher_table['평균자책점'].mean(axis=0)
     pitcher_table['평균자책점'].fillna(mean_ja, inplace=True)  # 누락값 평균값으로 대체
 
-    pitcher_table.to_csv('pitcher_processing_new'+str(i)+'.csv', encoding='utf-8-sig')
+    pitcher_table.to_csv('pitcher_processing_new'+str(i)+'.csv', encoding='utf-8-sig', index= False)
