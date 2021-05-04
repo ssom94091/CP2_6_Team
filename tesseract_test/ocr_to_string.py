@@ -20,7 +20,7 @@ def ocrToStr(fullPath, outTxtPath, fileName, lang='eng'):  # 디폴트는 영어
     # preserve_interword_spaces : 단어 간격 옵션을 조절하면서 추출 정확도를 확인한다.
     # psm(페이지 세그먼트 모드 : 이미지 영역안에서 텍스트 추출 범위 모드)
     # psm 모드 : https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage
-    outText = image_to_string(img, lang=lang, config=' --psm 6 -c preserve_interword_spaces=1')
+    outText = image_to_string(img, lang=lang, config=' --psm 11 -c preserve_interword_spaces=1')
 
     print('+++ OCT Extract Result +++')
     print('Extract FileName ->>> : ', fileName, ' : <<<-')
@@ -48,4 +48,4 @@ if __name__ == "__main__":
         for fname in files:
             fullName = os.path.join(root, fname)
             # 한글+영어 추출(kor, eng , kor+eng)
-            ocrToStr(fullName, outTxtPath, fname, 'eng+kor')
+            ocrToStr(fullName, outTxtPath, fname, 'kor')
