@@ -1,5 +1,8 @@
 import pandas as pd
 
+new_hitter_factor = 0.6
+new_hitter_three_strike_out_factor = 1.4 # 신인일수록 삼진은 많이 당한다
+
 for i in range(2017, 2021):
     # 해당 년도의 타자 데이터를 읽어서 DataFrame 형식으로 가져옴
     table = pd.read_csv('../hitter_data/hitter_' + str(i) + '.csv')
@@ -29,15 +32,15 @@ for i in range(2017, 2021):
     #print(table)
 
     # 타석에 들어선 횟수가 20번 이하인 경우에는 신인으로 간주하여 선수 평균보다 낮은 값으로 설정
-    table.loc[table['타석'] <= 20, '타율'] = table['타율'].mean(axis=0) * 0.8
-    table.loc[table['타석'] <= 20, '타수대비홈런'] = table['타수대비홈런'].mean(axis=0) * 0.8
-    table.loc[table['타석'] <= 20, '타수대비삼진'] = table['타수대비삼진'].mean(axis=0) * 1.2 # 신인일수록 삼진은 많이 당한다
-    table.loc[table['타석'] <= 20, '타수대비사구'] = table['타수대비사구'].mean(axis=0) * 0.8
-    table.loc[table['타석'] <= 20, '타수대비득점'] = table['타수대비득점'].mean(axis=0) * 0.8
-    table.loc[table['타석'] <= 20, '타수대비타점'] = table['타수대비타점'].mean(axis=0) * 0.8
-    table.loc[table['타석'] <= 20, '출루율'] = table['출루율'].mean(axis=0) * 0.8
-    table.loc[table['타석'] <= 20, '도루성공률'] = table['도루성공률'].mean(axis=0) * 0.8
-    table.loc[table['타석'] <= 20, '선수OPS'] = table['선수OPS'].mean(axis=0) * 0.8
+    table.loc[table['타석'] <= 20, '타율'] = table['타율'].mean(axis=0) * new_hitter_factor
+    table.loc[table['타석'] <= 20, '타수대비홈런'] = table['타수대비홈런'].mean(axis=0) * new_hitter_factor
+    table.loc[table['타석'] <= 20, '타수대비삼진'] = table['타수대비삼진'].mean(axis=0) * new_hitter_three_strike_out_factor # 신인일수록 삼진은 많이 당한다
+    table.loc[table['타석'] <= 20, '타수대비사구'] = table['타수대비사구'].mean(axis=0) * new_hitter_factor
+    table.loc[table['타석'] <= 20, '타수대비득점'] = table['타수대비득점'].mean(axis=0) * new_hitter_factor
+    table.loc[table['타석'] <= 20, '타수대비타점'] = table['타수대비타점'].mean(axis=0) * new_hitter_factor
+    table.loc[table['타석'] <= 20, '출루율'] = table['출루율'].mean(axis=0) * new_hitter_factor
+    table.loc[table['타석'] <= 20, '도루성공률'] = table['도루성공률'].mean(axis=0) * new_hitter_factor
+    table.loc[table['타석'] <= 20, '선수OPS'] = table['선수OPS'].mean(axis=0) * new_hitter_factor
     table.loc[table['타석'] <= 20, '선수WAR'] = 0
 
     #타율 관련 정보는 drop되어서는 안되므로 ordinary_columns에서 삭제
@@ -49,15 +52,15 @@ for i in range(2017, 2021):
     # 신인 선수 데이터 추가, 만약 이후 엔트리 데이터 처리할 때, 데이터가 없는 타자가 나온다면 신인으로 처리한다.
     new_data = {
         '이름' : '신인',
-        '타율' : table['타율'].mean(axis=0) * 0.8,
-        '타수대비홈런' : table['타수대비홈런'].mean(axis=0) * 0.8,
-        '타수대비삼진' : table['타수대비삼진'].mean(axis=0) * 1.2,
-        '타수대비사구' : table['타수대비사구'].mean(axis=0) * 0.8,
-        '타수대비득점' : table['타수대비득점'].mean(axis=0) * 0.8,
-        '타수대비타점' : table['타수대비타점'].mean(axis=0) * 0.8,
-        '출루율': table['출루율'].mean(axis=0) * 0.8,
-        '도루성공률' : table['도루성공률'].mean(axis=0) * 0.8,
-        '선수OPS' : table['선수OPS'].mean(axis=0) * 0.8,
+        '타율' : table['타율'].mean(axis=0) * new_hitter_factor,
+        '타수대비홈런' : table['타수대비홈런'].mean(axis=0) * new_hitter_factor,
+        '타수대비삼진' : table['타수대비삼진'].mean(axis=0) * new_hitter_three_strike_out_factor,
+        '타수대비사구' : table['타수대비사구'].mean(axis=0) * new_hitter_factor,
+        '타수대비득점' : table['타수대비득점'].mean(axis=0) * new_hitter_factor,
+        '타수대비타점' : table['타수대비타점'].mean(axis=0) * new_hitter_factor,
+        '출루율': table['출루율'].mean(axis=0) * new_hitter_factor,
+        '도루성공률' : table['도루성공률'].mean(axis=0) * new_hitter_factor,
+        '선수OPS' : table['선수OPS'].mean(axis=0) * new_hitter_factor,
         '선수WAR' : 0
     }
 
