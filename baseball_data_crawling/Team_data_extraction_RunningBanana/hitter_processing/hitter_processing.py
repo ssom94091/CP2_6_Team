@@ -1,7 +1,7 @@
 import pandas as pd
 
-new_hitter_factor = 0.6
-new_hitter_three_strike_out_factor = 1.4 # 신인일수록 삼진은 많이 당한다
+new_hitter_factor = 0.7
+new_hitter_three_strike_out_factor = 1.3 # 신인일수록 삼진은 많이 당한다
 
 for i in range(2017, 2021):
     # 해당 년도의 타자 데이터를 읽어서 DataFrame 형식으로 가져옴
