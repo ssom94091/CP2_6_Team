@@ -1,7 +1,7 @@
 <?php
 
     echo $_GET["searchTerm"];
-
+    
 
 ?>
 <!DOCTYPE html>
@@ -348,7 +348,11 @@
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">승부예측 결과</h1>
 
-    
+    <div>
+            
+    </div>
+
+    <html
             </div>
             <!-- End of Main Content -->
 
@@ -356,7 +360,8 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Your Website 2020
+                        </span>
                     </div>
                 </div>
             </footer>
@@ -412,4 +417,4 @@
 
 </body>
 
-</php>
+</html>

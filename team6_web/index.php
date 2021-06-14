@@ -65,8 +65,7 @@
              
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="stats.php">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Stats</span>
                 </a>
@@ -185,7 +184,6 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
                                 <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter">3+</span>
                             </a>
                             <!-- Dropdown - Alerts -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -236,7 +234,6 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-envelope fa-fw"></i>
                                 <!-- Counter - Messages -->
-                                <span class="badge badge-danger badge-counter">7</span>
                             </a>
                             <!-- Dropdown - Messages -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -497,7 +494,7 @@
                                                             
                                                                 
                                                                 
-                                                                    <img src="https://dthumb-phinf.pstatic.net/?src=https://sports-phinf.pstatic.net/team/kbo/default/SS.png&type=f25_25&refresh=1" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'SS');">
+                                                                    <img src="img/SAMSUNG.jpg" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'SS');">
                                                                 
                                                             
                                                             <span id="team_SS">삼성</span>
@@ -522,7 +519,7 @@
                                                             
                                                                 
                                                                 
-                                                                    <img src="https://dthumb-phinf.pstatic.net/?src=https://sports-phinf.pstatic.net/team/kbo/default/SK.png&type=f25_25&refresh=1" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'SK');">
+                                                                    <img src="img/SK.jpg" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'SK');">
                                                                 
                                                             
                                                             <span id="team_SK">SSG</span>
@@ -547,7 +544,7 @@
                                                             
                                                                 
                                                                 
-                                                                    <img src="https://dthumb-phinf.pstatic.net/?src=https://sports-phinf.pstatic.net/team/kbo/default/NC.png&type=f25_25&refresh=1" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'NC');">
+                                                                    <img src="img/NC.jpg" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'NC');">
                                                                 
                                                             
                                                             <span id="team_NC">NC</span>
@@ -572,7 +569,7 @@
                                                             
                                                                 
                                                                 
-                                                                    <img src="https://dthumb-phinf.pstatic.net/?src=https://sports-phinf.pstatic.net/team/kbo/default/OB.png&type=f25_25&refresh=1" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'OB');">
+                                                                    <img src="img/DOOSAN.jpg" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'OB');">
                                                                 
                                                             
                                                             <span id="team_OB">두산</span>
@@ -854,4 +851,4 @@
 
 </body>
 
-</php>
+</html>

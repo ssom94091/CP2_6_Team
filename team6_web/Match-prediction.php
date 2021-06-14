@@ -10,7 +10,8 @@
         <meta name="author" content="">
     
         <title>CP2 Project_6team</title>
-    
+        <style>
+            </style>
         <!-- Custom fonts for this template-->
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <link
@@ -64,7 +65,7 @@
                  
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    <a class="nav-link collapsed" href="stats.php" data-toggle="collapse" data-target="#collapseTwo"
                         aria-expanded="true" aria-controls="collapseTwo">
                         <i class="fas fa-fw fa-cog"></i>
                         <span>Stats</span>
@@ -353,12 +354,27 @@
     <div class="card-header py-3">
           <h6 class="m-0 font-weight-bold text-primary">라인업</h6>
      </div>
- <form action="prediction.php" method="GET">
+
+
+ <form name="info" action="prediction.php" method="GET">
    <div class="card-body">
     
        <p>Home</p>
              <table class="table table-bordered" id="table" width="100%" cellspacing="0">
-                <input type="text" name="team1_tn1" placeholder="Home 팀명 입력">
+                <input style="border-width: 2px" type="text" list="teams" placeholder="Home 팀명" name="Home_teamname"
+                 width="100">
+                 <datalist id="teams">
+                    <option value="삼성">
+                    <option value="두산">
+                    <option value="LG">
+                    <option value="키움">
+                    <option value="KT">
+                    <option value="롯데">
+                    <option value="KIA">
+                    <option value="SK">
+                    <option value="한화">
+                    <option value="NC">
+                </datalist>
             <thead>
                 <tr>
                     <th>순</th>
@@ -370,66 +386,202 @@
                  <tbody>
                      <tr>
                      <td>1</td>
-                     <td><input type="text" name="team1_po1"></td>
+                     <td><input type="text" list="po"  placeholder="선택" list="position" name="team1_po1">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                      <td><input type="text" name="team1_name1"></td>
                      <td><input type="text" name="team1_no1"></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td><input type="text" name="team1_po2"></td>
+                        <td><input type="text" list="po"  placeholder="선택" list="position" name="team1_po2">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                         <td><input type="text"name="team1_name2"></td>
                         <td><input type="text"name="team1_no2"></td>
                        </tr>
                        <tr>
                         <td>3</td>
-                     
-                        <td><input type="text" name="team1_po3"></td>
+                          <td><input type="text" list="po"  placeholder="선택" list="position" name="team1_po3">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                            </td>
                         <td><input type="text" name="team1_name3"></td>
                         <td><input type="text"name="team1_no3"></td>
                        </tr>
                        <tr>
                         <td>4</td>
-                        <td><input type="text" name="team1_po4"></td>
+                        <td><input type="text" list="po"  placeholder="선택" list="position" name="team1_po4">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                         <td><input type="text" name="team1_name4"></td>
                         <td><input type="text"name="team1_no4"></td>
                        </tr>
                        <tr>
                         <td>5</td>
-                        <td><input type="text" name="team1_po5"></td>
+                        <td><input type="text" list="po"  placeholder="선택" list="position" name="team1_po5">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                         <td><input type="text" name="team1_name5"></td>
                         <td><input type="text"name="team1_no5"></td>
                        </tr>
                        <tr>
                         <td>6</td>
-                        <td><input type="text" name="team1_po6"></td>
+                        <td><input type="text" list="po"  placeholder="선택" list="position" name="team1_po6">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                         <td><input type="text" name="team1_name6"></td>
                         <td><input type="text"name="team1_no6"></td>
                        </tr>
                        <tr>
                         <td>7</td>
                   
-                        <td><input type="text" name="team1_po7"></td>
+                        <td><input type="text" list="po"  placeholder="선택" list="position" name="team1_po7">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                         <td><input type="text" name="team1_name7"></td>
                         <td><input type="text"name="team1_no7"></td>
                        </tr>
                        <tr>
                         <td>8</td>
                        
-                        <td><input type="text" name="team1_po8"></td>
+                        <td><input type="text" list="po"  placeholder="선택" list="position" name="team1_po8">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                         <td><input type="text" name="team1_name8"></td>
                         <td><input type="text"name="team1_no8"></td>
                        </tr>
                        <tr>
                         <td>9</td>
                         
-                        <td><input type="text" name="team1_po9"></td>
+                        <td><input type="text" list="po"  placeholder="선택" list="position" name="team1_po9">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                         <td><input type="text" name="team1_name9"></td>
                         <td><input type="text"name="team1_no9"></td>
                        </tr>
                  </tbody>
+                 <br><hr>
+                
                  </table>
+                 <td>선발투수 : </td>
+                        <td><input type="text" name="team1_nameP" placeholder="성명"></td>
+                        <td><input type="text"name="team1_noP" placeholder="등번호"></td>
+                       </tr>
                  <p><hr><br>Away</p>
-                  <input type="text" name="team2_tn2" placeholder="Away 팀명 입력">
+                  <input style="border-width: 2px" type="text" list="teams" placeholder="Home 팀명" name="Away_teamname"
+                 width="100">
+                 <datalist id="teams">
+                    <option value="삼성">
+                    <option value="두산">
+                    <option value="LG">
+                    <option value="키움">
+                    <option value="KT">
+                    <option value="롯데">
+                    <option value="KIA">
+                    <option value="SK">
+                    <option value="한화">
+                    <option value="NC">
+                </datalist>
+                
                  <table class="table table-bordered" id="table" width="100%" cellspacing="0">
                     <tr>
                         <th>순</th>
@@ -441,61 +593,181 @@
                      <tbody>
                          <tr>
                          <td>1</td>
-                         <td><input type="text" name="team2_po1"></td>
+                         <td><input type="text" list="po"  placeholder="선택" list="position" name="team2_po1">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                          <td><input type="text" name="team2_name1"></td>
                          <td><input type="text" name="team2_no1"></td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td><input type="text" name="team2_po2"></td>
+                            <td><input type="text" list="po"  placeholder="선택" list="position" name="team2_po2">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                             <td><input type="text" name="team2_name2"></td>
                             <td><input type="text" name="team2_no2"></td>
                            </tr>
                            <tr>
                             <td>3</td>
-                            <td><input type="text" name="team2_po3"></td>
+                           <td><input type="text" list="po"  placeholder="선택" list="position" name="team2_po3">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                             <td><input type="text" name="team2_name3"></td>
                             <td><input type="text"  name="team2_no3"></td>
                            </tr>
                            <tr>
                             <td>4</td>
-                            <td><input type="text" name="team2_po4"></td>
+                            <td><input type="text" list="po"  placeholder="선택" list="position" name="team2_po4">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                             <td><input type="text" name="team2_name4"></td>
                             <td><input type="text"  name="team2_no4"></td>
                            </tr>
                            <tr>
                             <td>5</td>
-                            <td><input type="text" name="team2_po5"></td>
+                            <td><input type="text" list="po"  placeholder="선택" list="position" name="team2_po5">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                             <td><input type="text" name="team2_name5"></td>
                             <td><input type="text"  name="team2_no5"></td>
                            </tr>
                            <tr>
                             <td>6</td>
-                            <td><input type="text" name="team2_po6"></td>
+                          <td><input type="text" list="po"  placeholder="선택" list="position" name="team2_po6">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                             <td><input type="text"name="team2_name6"></td>
                             <td><input type="text"  name="team2_no6"></td>
                            </tr>
                            <tr>
                             <td>7</td>
-                            <td><input type="text" name="team2_po7"></td>
+                            <td><input type="text" list="po"  placeholder="선택" list="position" name="team2_po7">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                             <td><input type="text" name="team2_name7"></td>
                             <td><input type="text"  name="team2_no7"></td>
                            </tr>
                            <tr>
                             <td>8</td>
-                            <td><input type="text"name="team2_po8"></td>
+                            <td><input type="text" list="po"  placeholder="선택" list="position" name="team2_po8">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                             <td><input type="text" name="team2_name8"></td>
                             <td><input type="text"  name="team2_no8"></td>
                            </tr>
                            <tr>
                             <td>9</td>
-                            <td><input type="text" name="team2_po9"></td>
+                            <td><input type="text" list="po"  placeholder="선택" list="position" name="team2_po9">
+                                <datalist id="po">
+                                    <option value="P">
+                                    <option value="C">
+                                    <option value="1B">
+                                    <option value="2B">
+                                    <option value="SS">
+                                    <option value="3B">
+                                    <option value="LF">
+                                    <option value="CF">
+                                    <option value="RF">
+                                    <option value="DF">
+                              </datalist>
+                     </td>
                             <td><input type="text" name="team2_name9"></td>
                             <td><input type="text "  name="team2_no9"></td>
                            </tr>
                      </tbody>
                      </table>
-                       
+                       <td>선발투수 : </td>
+                        <td><input type="text" name="team2_nameP" placeholder="성명"></td>
+                        <td><input type="text"name="team2_noP" placeholder="등번호"></td>
+                       </tr>
                             <button class="searchButton"  type="submit" value="제출">제출</button>
             </form>
     </div>
@@ -512,7 +784,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; knu team6 2021</span>
                     </div>
                 </div>
             </footer>
@@ -568,4 +840,4 @@
 
 </body>
 
-</php>
+</html>
